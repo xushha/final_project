@@ -15,24 +15,24 @@
     padding-left: 0;
     background-position:left;
   }
- .pre_header{
-   height:60px;
- }
+  .pre_header{
+    height:60px;
+  }
   .container{
     margin:0;
   }
   .owl-carousel{
     padding-left:0px;
   }
-   .meet_the_pin p{
-     padding-left: 50px;
-   }
-   .meet_the_pin h1{
-     padding-left:50px;
-   }
-   .meet_the_pin a{
-     margin-left:50px;
-   }
+  .meet_the_pin p{
+    padding-left: 50px;
+  }
+  .meet_the_pin h1{
+    padding-left:50px;
+  }
+  .meet_the_pin a{
+    margin-left:50px;
+  }
 
   .pieces{
     flex-wrap: wrap;
@@ -76,6 +76,8 @@
     margin-bottom:30px;
 
   }
+
+
   .editions{
     flex-direction:column;
     min-height: 800px;
@@ -83,7 +85,7 @@
 
   .editions article{
     margin-right:0;
-    width: 135px;
+    width: 540px;
     overflow: hidden;
   }
   .from_essentials{
@@ -114,60 +116,61 @@
 
 
   #edition_1{
-    @include absolut_item(75px,27px);
+    @include absolut_item(75px,20%);
     z-index: 5;
     width: 255px;
     overflow: hidden;
 
   }
   #edition_2{
-    @include absolut_item(41%,27px);
+    @include absolut_item(41%,50%);
     z-index: 6;
     width: 255px;
   }
   #edition_3{
-    @include absolut_item(73%,27px);
+    @include absolut_item(73%,50%);
     z-index: 7;
     width: 255px;
   }
 
   #edition_4{
-    @include absolut_item(105%,27px);
+    @include absolut_item(105%,50%);
     z-index: 8;
     width: 255px;
 
   }
   .description{
     position: absolute;
-    max-width: 230px;
+    max-width: 234px;
     text-align: left;
-
   }
 
- #des_1{
-   left: 290px;
-   top:87px;
- }
-  #des_2{
-    left:290px;
-    top:405px;
-  }
-  #des_3{
-    left:290px;
-    top:710px;
-  }
-  #des_4{
-    left:290px;
-    top:1018px;
-  }
+
+
+  //#des_1{
+  //padding-left:50px;
+  //}
+  //#des_2{
+  //left:290px;
+  //top:405px;
+  //}
+  //#des_3{
+  //left:290px;
+  //top:710px;
+  //}
+  //#des_4{
+  //left:290px;
+  //top:1018px;
+  //}
+
   #pan_text-1{
-   left:250px;
+    left:250px;
   }
   #pan_text-2{
-   left:100px;
+    left:100px;
   }
   #pan_text-3{
-   left:275px;
+    left:275px;
     top:230px;
   }
   #pan_text-4{
@@ -201,7 +204,7 @@
   }
   .welcome h2{
     margin-right:0;
-   margin-bottom:50px;
+    margin-bottom:50px;
 
   }
   .designed_for{
@@ -339,31 +342,33 @@
     overflow:hidden;
   }
   .pieces{
-     gap:40px;
+    gap:40px;
     @include row_items(50px);
   }
-
+ .editions>article{
+   margin-right:0;
+ }
 
   #edition_1{
-    @include absolut_item(75px,45px);
+    @include absolut_item(75px,20px);
     z-index: 5;
     width: 200px;
     overflow: hidden;
 
   }
   #edition_2{
-    @include absolut_item(75px,280px);
+    @include absolut_item(75px,20px);
     z-index: 6;
     width: 200px;
   }
   #edition_3{
-    @include absolut_item(75px,515px);
+    @include absolut_item(75px,20px);
     z-index: 7;
     width: 200px;
   }
 
   #edition_4{
-    @include absolut_item(75px,750px);
+    @include absolut_item(75px,20px);
     z-index: 8;
     width: 200px;
 
@@ -371,33 +376,32 @@
 
 
   #pre_ed_1{
-    position: absolute;
+    @include absolut_item(30px,28px);
     z-index:10;
-    left:42px;
-    top:20px;
-    width:20%
+    width:80%;
+    //left:42px;
+    //top:20px;
+    //width:20%
   }
   #pre_ed_2{
-    position: absolute;
+    @include absolut_item(30px,28px);
     z-index:10;
-    left:275px;
-    top:20px;
-    width:20%
+    width:80%;
   }
   #pre_ed_3{
-    position: absolute;
+    @include absolut_item(30px,28px);
     z-index:10;
-    left:521px;
-    top:20px;
-    width:20%
+    width:80%;
   }
   #pre_ed_4{
-    position: absolute;
+    @include absolut_item(100px,28px);
     z-index:10;
-    top:108px;
-    width:20%
+    width:80%;
   }
 
+  .description{
+    width:234px;
+  }
 
 
 }

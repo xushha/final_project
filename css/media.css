@@ -12,6 +12,7 @@
 
 .pre_header {
   text-align: center;
+  height: 40px;
   background-color: #F0EEDD;
 }
 
@@ -38,7 +39,6 @@
 
 .main_menu li {
   margin-right: 35px;
-  min-height: 60px;
   min-width: 40px;
 }
 
@@ -296,7 +296,6 @@
   flex-direction: row;
   padding-left: 28px;
   padding-right: 28px;
-  position: relative;
   margin-top: 50px;
 }
 
@@ -314,6 +313,7 @@
   margin-right: 30px;
   width: 255px;
   margin-bottom: 246px;
+  position: relative;
 }
 
 .editions > article:last-child {
@@ -367,34 +367,30 @@
 #edition_1 {
   position: absolute;
   top: 75px;
-  left: 27px;
+  left: 5px;
   z-index: 5;
-  width: 255px;
   overflow: hidden;
 }
 
 #edition_2 {
   position: absolute;
   top: 75px;
-  left: 312px;
+  left: 5px;
   z-index: 6;
-  width: 255px;
 }
 
 #edition_3 {
   position: absolute;
   top: 75px;
-  left: 595px;
+  left: 5px;
   z-index: 7;
-  width: 255px;
 }
 
 #edition_4 {
   position: absolute;
   top: 75px;
-  left: 880px;
+  left: 5px;
   z-index: 8;
-  width: 255px;
 }
 
 .description {
@@ -511,6 +507,10 @@
   font-size: 16px;
   color: #F5F1E9;
   opacity: 60%;
+}
+
+.shop_company_social nav ul li a:hover {
+  opacity: 100%;
 }
 
 .you_in p {
@@ -790,7 +790,7 @@ footer nav ul li:last-child {
   }
   .editions article {
     margin-right: 0;
-    width: 135px;
+    width: 540px;
     overflow: hidden;
   }
   .from_essentials {
@@ -819,7 +819,7 @@ footer nav ul li:last-child {
   #edition_1 {
     position: absolute;
     top: 75px;
-    left: 27px;
+    left: 20%;
     z-index: 5;
     width: 255px;
     overflow: hidden;
@@ -827,44 +827,28 @@ footer nav ul li:last-child {
   #edition_2 {
     position: absolute;
     top: 41%;
-    left: 27px;
+    left: 50%;
     z-index: 6;
     width: 255px;
   }
   #edition_3 {
     position: absolute;
     top: 73%;
-    left: 27px;
+    left: 50%;
     z-index: 7;
     width: 255px;
   }
   #edition_4 {
     position: absolute;
     top: 105%;
-    left: 27px;
+    left: 50%;
     z-index: 8;
     width: 255px;
   }
   .description {
     position: absolute;
-    max-width: 230px;
+    max-width: 234px;
     text-align: left;
-  }
-  #des_1 {
-    left: 290px;
-    top: 87px;
-  }
-  #des_2 {
-    left: 290px;
-    top: 405px;
-  }
-  #des_3 {
-    left: 290px;
-    top: 710px;
-  }
-  #des_4 {
-    left: 290px;
-    top: 1018px;
   }
   #pan_text-1 {
     left: 250px;
@@ -1064,10 +1048,13 @@ footer nav ul li:last-child {
     padding-left: 50px;
     padding-right: 50px;
   }
+  .editions > article {
+    margin-right: 0;
+  }
   #edition_1 {
     position: absolute;
     top: 75px;
-    left: 45px;
+    left: 20px;
     z-index: 5;
     width: 200px;
     overflow: hidden;
@@ -1075,50 +1062,54 @@ footer nav ul li:last-child {
   #edition_2 {
     position: absolute;
     top: 75px;
-    left: 280px;
+    left: 20px;
     z-index: 6;
     width: 200px;
   }
   #edition_3 {
     position: absolute;
     top: 75px;
-    left: 515px;
+    left: 20px;
     z-index: 7;
     width: 200px;
   }
   #edition_4 {
     position: absolute;
     top: 75px;
-    left: 750px;
+    left: 20px;
     z-index: 8;
     width: 200px;
   }
   #pre_ed_1 {
     position: absolute;
+    top: 30px;
+    left: 28px;
     z-index: 10;
-    left: 42px;
-    top: 20px;
-    width: 20%;
+    width: 80%;
   }
   #pre_ed_2 {
     position: absolute;
+    top: 30px;
+    left: 28px;
     z-index: 10;
-    left: 275px;
-    top: 20px;
-    width: 20%;
+    width: 80%;
   }
   #pre_ed_3 {
     position: absolute;
+    top: 30px;
+    left: 28px;
     z-index: 10;
-    left: 521px;
-    top: 20px;
-    width: 20%;
+    width: 80%;
   }
   #pre_ed_4 {
     position: absolute;
+    top: 100px;
+    left: 28px;
     z-index: 10;
-    top: 108px;
-    width: 20%;
+    width: 80%;
+  }
+  .description {
+    width: 234px;
   }
 }
 

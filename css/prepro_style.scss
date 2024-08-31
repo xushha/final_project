@@ -62,7 +62,7 @@ $pre_footer_back_col:#6C674D;
 }
 .pre_header{
   text-align:center;
-  //height:40px;
+  height:40px;
   background-color: #F0EEDD;
 }
 .pre_header p{
@@ -84,12 +84,8 @@ $pre_footer_back_col:#6C674D;
 }
 .main_menu li{
   margin-right:35px;
-  min-height:60px;
   min-width:40px;
 }
-//.login{
-//  border-bottom:3px solid transparent;
-//}
 .first_menu li:not(.login_li){
   padding-bottom:30px;
   border-bottom:3px solid transparent;
@@ -110,7 +106,7 @@ $pre_footer_back_col:#6C674D;
   background-color: #C87B5E;
   padding: 4px 15px;
 
- }
+}
 
 .login a{
   color: #FFFFFF;
@@ -118,12 +114,7 @@ $pre_footer_back_col:#6C674D;
 .meet_the_pin p{
   @include regular_text(16,$text_color);
 }
-//.meet_the_pin{
-//  //background-image: url("../images/new_Rectangle.png");
-//  padding-top: 168px;
-//  padding-left: 384px;
-//  height: 500px;
-//}
+
 .meet_the_pin span{
   text-decoration: underline;
 }
@@ -221,26 +212,6 @@ $pre_footer_back_col:#6C674D;
   @include absolut_item(53%,870px);
 }
 
-//
-//.designed_for>div:nth-child(3){
-//  @include absolut_item(45%,30px);
-//}
-//
-//.designed_for>div:nth-child(4){
-//  @include absolut_item(65%,50px);
-//}
-//.designed_for>div:nth-child(5){
-//  @include absolut_item(80%,50px);
-//}
-//.designed_for>div:nth-child(6){
-//  @include absolut_item(32%,850px);
-//}
-//.designed_for>div:nth-child(7){
-//  @include absolut_item(60%,850px);
-//}
-//.designed_for>div:nth-child(8){
-//  @include absolut_item(75%,850px);
-//}
 .from_essentials{
   background-color: #FCFAF6;
   z-index: -20;
@@ -303,7 +274,7 @@ $pre_footer_back_col:#6C674D;
 
 .editions{
   @include row_items(28px);
-  position: relative;
+  //position: relative;
   margin-top: 50px;
 
 }
@@ -319,9 +290,10 @@ $pre_footer_back_col:#6C674D;
   width: 255px;
   //overflow: hidden;
   margin-bottom: 246px;
+  position: relative;
 }
 .editions>article:last-child{
-   margin-right: 0;
+  margin-right: 0;
   background-color: red;
 
 }
@@ -360,27 +332,27 @@ $pre_footer_back_col:#6C674D;
 
 
 #edition_1{
-  @include absolut_item(75px,27px);
+  @include absolut_item(75px,5px);
   z-index: 5;
-  width: 255px;
+  //width: 255px;
   overflow: hidden;
 
 }
 #edition_2{
-  @include absolut_item(75px,312px);
+  @include absolut_item(75px,5px);
   z-index: 6;
-  width: 255px;
+  //width: 255px;
 }
 #edition_3{
-  @include absolut_item(75px,595px);
+  @include absolut_item(75px,5px);
   z-index: 7;
-  width: 255px;
+  //width: 255px;
 }
 
 #edition_4{
-  @include absolut_item(75px,880px);
+  @include absolut_item(75px,5px);
   z-index: 8;
-  width: 255px;
+  //width: 255px;
 
 }
 
@@ -473,6 +445,11 @@ $pre_footer_back_col:#6C674D;
   @include regular_text(16px,#F5F1E9);
   opacity: 60%;
 }
+
+.shop_company_social nav ul li a:hover{
+  opacity: 100%;
+}
+
 .you_in p{
   display: flex;
   flex-direction: column;
@@ -563,7 +540,7 @@ footer nav ul li:last-child{
   position:relative;
 }
 .registration_page h1{
- @include bold_text(30px,#35312E);
+  @include bold_text(30px,#35312E);
   margin-bottom: 30px;
   padding-top: 30px;
 }
