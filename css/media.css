@@ -807,6 +807,7 @@ footer nav ul li:last-child {
 
 .shop-menu:hover .best-sellers {
   opacity: 100%;
+  transition: 1s;
 }
 
 .shop-menu ul {
@@ -826,6 +827,36 @@ footer nav ul li:last-child {
 .sales {
   display: flex;
   flex-direction: row;
+}
+
+.first_menu ul li a:not(.login):hover {
+  color: #C87B5E;
+}
+
+.login:hover {
+  color: #FFFFFF;
+}
+
+.meet_the_pin a:hover {
+  padding: 23px 40px;
+  max-width: 280px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.follow:hover {
+  background-color: #35312E;
+  color: #FFFFFF;
+  transition: 1s;
+}
+
+.best-sellers div ul li a {
+  border-bottom: 1px solid #670A18;
+  padding-bottom: 20px;
+}
+
+.best-sellers div ul li {
+  min-width: 100px;
 }
 
 @media screen and (max-width: 540px) {
