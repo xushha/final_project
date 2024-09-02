@@ -117,12 +117,19 @@ $pre_footer_back_col:#6C674D;
   min-width:40px;
 }
 .first_menu li:not(.login_li){
-  padding-bottom:30px;
+  //padding-bottom:30px;
   border-bottom:3px solid transparent;
 }
-.first_menu li:not(.login_li):hover{
-  border-bottom:3px solid #670A18;
-}
+//
+//.first_menu li:not(.login_li):hover{
+//  border-bottom:3px solid #670A18;
+//}
+//.first_menu li:not(.shop-menu):hover {
+//  border-bottom:3px solid #670A18;
+//}
+//
+
+
 .main_menu li:first-child{
   margin-left: 35px;
 }
@@ -606,4 +613,69 @@ footer nav ul li:last-child{
   position: absolute;
   top:-32px;
   left:1165px;
+}
+
+.shop-menu{
+  position: relative;
+}
+.shop-menu article{
+  position:absolute;
+  display: flex;
+  width: 190px;
+  left:-35px;
+  top:60px;
+  height: 250px;
+  background-color: $main_back_color;
+  z-index: 10;
+
+}
+
+.best-sellers{
+  display: flex;
+  opacity:0;
+  top: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.best-sellers ul{
+ flex-direction: column;
+}
+
+.best-sellers div{
+  display: flex;
+
+}
+
+.essentials-text .name{
+ @include regular_text(14px,#35312E);
+  text-transform: uppercase;
+  line-height:24px;
+}
+.essentials-text .main_text{
+  @include regular_text(13px, #6E635A);
+  line-height:20px;
+}
+.shop-menu:hover .best-sellers{
+  opacity:100%;
+}
+//.sales div{
+//  height:200px;
+//  width: 350px;
+//}
+
+.shop-menu ul{
+  width: 200px;
+  margin-left: 30px;
+}
+.shop-menu ul li:first-child{
+  margin-left: 0;
+}
+.left-sale img{
+  width: 150px;
+  height: 100px;
+}
+.sales{
+  display: flex;
+  flex-direction:row;
 }

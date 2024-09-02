@@ -47,9 +47,9 @@
   border-bottom: 3px solid transparent;
 }
 
-.first_menu li:not(.login_li):hover {
-  border-bottom: 3px solid #670A18;
-}
+/*.first_menu li:not(.login_li):hover {*/
+/*  border-bottom: 3px solid #670A18;*/
+/*}*/
 
 .main_menu li:first-child {
   margin-left: 35px;
@@ -718,5 +718,12 @@ footer nav ul li:last-child {
   top: -32px;
   left: 1165px;
 }
+.best-sellers div{
+  display: flex;
 
+}
+.best-sellers div img{
+  width: 50px;
+  height: 50px;
+}
 /*# sourceMappingURL=prepro_style.css.map */

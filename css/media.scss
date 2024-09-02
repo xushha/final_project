@@ -78,21 +78,6 @@
   }
 
 
-  #pan_text-1{
-    left:250px;
-  }
-  #pan_text-2{
-    left:100px;
-  }
-  #pan_text-3{
-    left:275px;
-    top:230px;
-  }
-  #pan_text-4{
-    left:350px;
-    top:500px;
-    max-width: 120px;
-  }
   .designed_for{
     padding-right: 10px;
     overflow: hidden;
@@ -100,30 +85,102 @@
   .pin{
     position: absolute;
     top:5%;
-    left:5px;
-    width: 150px;
+    left:0;
 
   }
-  .essentials_container{
-    @include column_items(20px);
+
+  .designed_for{
+    padding-left: 10px;
+    padding-right:10px;
+    width: 520px;
   }
   .essentials_container article{
-    display: flex;
-    flex-direction: row;
-    width:520px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  .essentials-text{
-    margin-left: 100px;
-    max-width: 380px;
-    text-align: right;
-    padding-left: 200px;
-    padding-top: 30px;
+    max-width:540px;
 
   }
+  .essentials-img{
+    left:0;
+
+  }
+  .essentials-text{
+    max-width:150px;
+    margin-right: 100px;
+   justify-content: center;
+  }
+
   .colors-col_2{
-    justify-content: right;
+    position: relative;
+    left:-110px;
+  }
+  .lid img{
+    @include absolut_item(125px,160px);
+    z-index: 10;
+    @include for-focus();
+  }
+
+  .lid-text{
+    @include float-text(5%,80px);
+  }
+
+  .lid img:hover+ .lid-text{
+    opacity: 100%;
+  }
+
+  .spout img{
+    @include absolut_item(430px,178px);
+    @include for-focus();
+  }
+  .spout-text{
+    @include float-text(420px,60px);
+  }
+
+  .spout img:hover+ .spout-text{
+    opacity:100%;
+  }
+  .nonstick img{
+    @include absolut_item(540px,195px);
+    @include for-focus();
+  }
+  .nonstick-text{
+    @include float-text(570px,30px);
+  }
+  .nonstick img:hover+ .nonstick-text{
+    opacity: 100%;
+  }
+  .spatula img{
+    @include absolut_item(148px,500px);
+    @include for-focus();
+  }
+  .spatula-text{
+    @include float-text(185px,80px);
+  }
+  .spatula img:hover+.spatula-text{
+    opacity: 100%;
+  }
+
+  .colander img{
+    @include absolut_item(350px,425px);
+    @include for-focus();
+  }
+  .colander-text{
+    @include float-text(220px,60px);
+  }
+  .colander img:hover+.colander-text{
+    opacity: 100%;
+  }
+  .handle img{
+    @include absolut_item(440px,450px);
+    @include for-focus();
+  }
+  .handle-text{
+    @include float-text(400px,60px);
+  }
+  .handle img:hover+.handle-text{
+    opacity:100%;
+  }
+
+  .colors-col_2{
+    justify-content: left;
   }
 }
 
@@ -188,24 +245,94 @@
   }
   .essentials_container{
     @include column_items(0);
+    padding-top: 50px;
   }
   .essentials_container article{
     display: flex;
     flex-direction: row;
-    width:700px;
-    //padding-top: 30px;
-    //padding-bottom: 30px;
-    //padding-right: 20px;
+    width:768px;
     flex-wrap: nowrap;
+    justify-content: center;
+    padding-left: 60px;
+    height: 300px;
   }
-  .essentials-text{
-    width: 200px;
-    margin-left: 500px;
-    padding:50px 0;
-    text-align: right;
+  .essentials-text {
+    width: 300px;
+    margin-left: 460px;
+    padding: 50px 0;
+    text-align: center;
+    justify-content: center;
+
+
   }
-  .colors-col_2{
-    justify-content: right;
+  .essentials-img{
+    left:40px;
+  }
+  .lid img{
+    @include absolut_item(125px,180px);
+    z-index: 10;
+    @include for-focus();
+  }
+
+  .lid-text{
+    @include float-text(5%,80px);
+  }
+
+  .lid img:hover+ .lid-text{
+    opacity: 100%;
+  }
+
+  .spout img{
+    @include absolut_item(430px,265px);
+    @include for-focus();
+  }
+  .spout-text{
+    @include float-text(420px,60px);
+  }
+
+  .spout img:hover+ .spout-text{
+    opacity:100%;
+  }
+  .nonstick img{
+    @include absolut_item(540px,250px);
+    @include for-focus();
+  }
+  .nonstick-text{
+    @include float-text(570px,30px);
+  }
+  .nonstick img:hover+ .nonstick-text{
+    opacity: 100%;
+  }
+  .spatula img{
+    @include absolut_item(168px,500px);
+    @include for-focus();
+  }
+  .spatula-text{
+    @include float-text(70px,540px);
+  }
+  .spatula img:hover+.spatula-text{
+    opacity: 100%;
+  }
+
+  .colander img{
+    @include absolut_item(350px,425px);
+    @include for-focus();
+  }
+  .colander-text{
+    @include float-text(268px,500px);
+  }
+  .colander img:hover+.colander-text{
+    opacity: 100%;
+  }
+  .handle img{
+    @include absolut_item(440px,500px);
+    @include for-focus();
+  }
+  .handle-text{
+    @include float-text(500px,560px);
+  }
+  .handle img:hover+.handle-text{
+    opacity:100%;
   }
 }
 @media screen and (max-width:992px){
