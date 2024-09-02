@@ -81,7 +81,7 @@ $pre_footer_back_col:#6C674D;
 @mixin for-focus{
   animation-name: focus;
   animation-duration: 0.9s;
-  animation-iteration-count: infinite; /* Бесконечное повторение анимации */
+  animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
 
@@ -117,17 +117,9 @@ $pre_footer_back_col:#6C674D;
   min-width:40px;
 }
 .first_menu li:not(.login_li){
-  //padding-bottom:30px;
+
   border-bottom:3px solid transparent;
 }
-//
-//.first_menu li:not(.login_li):hover{
-//  border-bottom:3px solid #670A18;
-//}
-//.first_menu li:not(.shop-menu):hover {
-//  border-bottom:3px solid #670A18;
-//}
-//
 
 
 .main_menu li:first-child{
@@ -218,8 +210,7 @@ $pre_footer_back_col:#6C674D;
   height:639px;
   text-align: center;
   padding-top: 70px;
-  //@include regular_text(12,#6E6259);
-  //text-transform: uppercase;
+
 
 }
 
@@ -320,7 +311,7 @@ $pre_footer_back_col:#6C674D;
 }
 
 .col_1{
-  //background-color: #670A18;
+
   width:30px;
   height:30px;
   border-radius: 50%;
@@ -392,6 +383,11 @@ $pre_footer_back_col:#6C674D;
   margin-bottom:61px;
 }
 
+.dirty_dishes img{
+  height:480px;
+  width:384px;
+}
+
 .follow{
   display: inline-flex;
   padding: 18px 41px;
@@ -402,14 +398,6 @@ $pre_footer_back_col:#6C674D;
   text-decoration: none;
   text-transform: uppercase;
 }
-//.dirty_dishes div{
-//  width: 480px;
-//}
-//.dirty_dishes div:nth-child(1){
-//  width: 400px;
-//  overflow: hidden;
-//
-//}
 
 .pre_footer{
   display: flex;
@@ -529,15 +517,15 @@ footer nav ul li:last-child{
   flex-direction: column;
 }
 .back_1 {
-  background-image: url('../images/Rectangle.png');
+  background-image: url('../images/Rectangle.webp');
 }
 
 .back_2{
-  background-image: url('../images/pan_2.png');
+  background-image: url('../images/pan_2.webp');
 }
 
 .back_3{
-  background-image: url('../images/pan_3.png');
+  background-image: url('../images/pan_3.webp');
 }
 .registration_page{
   max-width:1200px;
@@ -660,10 +648,6 @@ footer nav ul li:last-child{
   opacity:100%;
   transition: 1s;
 }
-//.sales div{
-//  height:200px;
-//  width: 350px;
-//}
 
 .shop-menu ul{
   width: 200px;
